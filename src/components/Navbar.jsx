@@ -1,5 +1,5 @@
+import { Search } from "lucide-react";
 import React from "react";
-import { IoIosSearch } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 
 const Navbar = ({ searchQuery, setSearchQuery, setTriggerSearch }) => {
@@ -26,9 +26,9 @@ const Navbar = ({ searchQuery, setSearchQuery, setTriggerSearch }) => {
             className="w-full h-10 pl-4 pr-12 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 shadow-md transition-all duration-300"
           />
           <NavLink>
-            <IoIosSearch
+            <Search
               className="absolute right-3 text-white top-1/2 transform -translate-y-1/2 text-gray-500 cursor-pointer active:scale-85 transition duration-300 text-xl"
-              onClick={handleSearchClick} 
+              onClick={handleSearchClick}
             />
           </NavLink>
         </div>
